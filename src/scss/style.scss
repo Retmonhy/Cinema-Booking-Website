@@ -4,4 +4,11 @@
 @import 'mixins.scss';
 @import 'header.scss';
 @import 'interface.scss';
+@import 'about-film.scss';
 
+*{
+	box-sizing: border-box;
+}
+body{
+	color: #fff;
+}

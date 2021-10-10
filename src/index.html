@@ -22,32 +22,111 @@
     
   </head>
   <body>
-  	<header class="header header-container">
-  		<div class="header-content">
 
-	  		<div class="logoPlusLinks">
-	  			<div class="logo">
-	  				<img class="image_logo" src="img/header//logo.png" alt="Logo">
-	  			</div>
-	  			<nav class="navbar">
-	  				<ul>
-	  					<li><a class="header-link" href="#">Главная</a></li>
-	  					<li><a class="header-link" href="#">Фильмы</a></li>
-	  					<li><a class="header-link" href="#">Кинотеатры</a></li>
-	  					<li><a class="header-link" href="#">События</a></li>
-	  					<li><a class="header-link" href="#">Поддержка</a></li>
-	  				</ul>
-	  			</nav>
+  	<main class="main-section main-container">
+	  	<header class="header">
+	  		<div class="header-content header-container">
+
+		  		<div class="logoPlusLinks">
+		  			<div class="logo">
+		  				<img class="image_logo" src="img/header//logo.png" alt="Logo">
+		  			</div>
+		  			<nav class="navbar">
+		  				<ul>
+		  					<li><a class="header-link" href="#">Главная</a></li>
+		  					<li><a class="header-link" href="#">Фильмы</a></li>
+		  					<li><a class="header-link" href="#">Кинотеатры</a></li>
+		  					<li><a class="header-link" href="#">События</a></li>
+		  					<li><a class="header-link" href="#">Поддержка</a></li>
+		  				</ul>
+		  			</nav>
+		  		</div>
+		  		<div class="user-block">
+		  			<div class="user_nickname">Привет, Дмитрий</div>
+		  			<div class="user-avatar">
+		  				<img class="image_user-avatar" src="img/header/photo_dima.jpg" alt="Avatar">
+		  			</div>
+		  		</div>
+	  		
 	  		</div>
-	  		<div class="user-block">
-	  			<div class="user_nickname">Привет, Дмитрий</div>
-	  			<div class="user-avatar">
-	  				<img class="image_user-avatar" src="img/header/photo_dima.jpg" alt="Avatar">
+	  	</header>
+
+  		<section class="aboutFilm">
+	  		<div class="aboutFilm-text">
+	  			<small class="small-title">Avengers: Infinity War</small>
+	  			<h1 class="title title_position">Мстители: война бесконечности</h1>
+
+	  			<p class="film-description">
+	  				Пока Мстители и их союзники продолжают защищать мир от различных опасностей, с которыми не смог бы справиться один супергерой, новая угроза возникает из космоса: Танос. Межгалактический тиран преследует цель собрать все шесть Камней Бесконечности - артефакты невероятной силы, с помощью которых можно менять реальность по своему желанию. Всё, с чем Мстители сталкивались ранее, вело к этому моменту – судьба Земли никогда ещё не была столь неопределённой.
+	  			</p>
+
+	  			<div class="durationAndRating durationAndRating_position">
+	  				<div class="film-duration film-duration_position">
+	  					<img class="clock" src="img/aboutFilm/clock.svg" alt="clock">
+	  					<span class="time">240 мин.</span>
+	  				</div>
+	  				<div class="film-rating">
+	  					<img class="imdb" src="img/aboutFilm/imdb.svg" alt="imdb-rating">
+	  					<span class="ratingValue">9.2 <sub>/ 10</sub></span>
+	  				</div>
 	  			</div>
 	  		</div>
-  		
-  		</div>
-  	</header>
+	  		<div class="film-trailer">
+	  			<button class="playTrailer">
+	  				
+	  			</button>		
+	  		</div>
+
+  		</section>
+	  		<section class="session session_position">
+	  			<div class="date">
+	  				<h3 class="session-label">Дата</h3>
+	  				<div class="date-block">
+	  					<div class="date__day">
+	  						<p>Апр</p>
+	  						<p>27</p>
+	  						<p>пт</p>
+	  					</div>
+	  					<div class="date__day">
+	  						<p>Апр</p>
+	  						<p>28</p>
+	  						<p>сб</p>
+	  					</div>
+	  					<div class="date__day">
+	  						<p>Апр</p>
+	  						<p>29</p>
+	  						<p>вс</p>
+	  					</div>
+	  					<div class="date__day">
+	  						<p>Апр</p>
+	  						<p>30</p>
+	  						<p>пн</p>
+	  					</div>
+	  				</div>
+	  			</div>
+	  			<div class="cinema">
+	  				<p class="session-label">Кинотеатр</p>
+	  				<div class="select-wrapper">
+		  				<select class="select" name="cinema" >
+		  					<option value="Октябрь, ул. Калужская 28">Октябрь, ул. Калужская 28</option>
+		  					<option value="Киномакс, ул. Розы Люксендург 15">Киномакс, ул. Розы Люксендург 15</option>
+		  					<option value="Goodwin, ул. Пушкина Люксенбург 73">Goodwin, ул. Пушкина Люксенбург 73</option>
+		  				</select>
+	  				</div>
+	  			</div>
+	  			<div class="session-time">
+	  				<p class="session-label">Время</p>
+	  				<div class="select-wrapper">
+	  				<select class="select" name="cinema" >
+	  					<option value="18:15">18:15</option>
+	  					<option value="19:30">19:30</option>
+	  					<option value="22:30">22:30</option>
+	  					<option value="23:00">23:00</option>
+	  				</select>
+	  				</div>
+	  			</div>
+	  		</section>
+  	</main>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
