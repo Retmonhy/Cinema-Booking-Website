@@ -1,0 +1,77 @@
+.header-container {
+  padding: 25px 135px;
+}
+
+.header {
+  background-color: black;
+}
+.header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header .logoPlusLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+.header .logo {
+  width: 100%;
+  height: 100%;
+}
+.header .navbar {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+.header .navbar ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 55px;
+}
+.header .navbar ul li .header-link {
+  display: inline-block;
+  margin-right: 25px;
+  color: #fff;
+  text-decoration: none;
+}
+.header .user-block {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header .user_nickname {
+  color: #fff;
+  font-size: 16px;
+  line-height: 18.75px;
+  margin-right: 11px;
+}
+.header .user-avatar {
+  width: 33px;
+  height: 33px;
+}
+.header .user-avatar .image_user-avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=style.css.map */
