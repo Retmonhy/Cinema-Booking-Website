@@ -1,0 +1,67 @@
+.scheme{
+	text-align: center;
+	padding-top: 64px;
+	background: #621402;
+	border-radius: 10px;
+	background-size: cover;
+	.places{
+		background: rgba(36, 36, 36, 0.18);
+		border-radius: 10px;
+	}
+}
+.qwerty:not(.legend):hover{
+	rect{	fill-opacity: 0.5;	}
+	path{	stroke-opacity: 0.5;	}
+	cursor: pointer;
+}
+.booked {
+	rect{	fill-opacity: 0.05;	}
+	path{	stroke-opacity: 0.05;	}
+}
+ .booked:not(.legend):hover{
+	cursor: not-allowed;
+	rect{	fill-opacity: 0.05;	}
+	path{	stroke-opacity: 0.05;	}
+
+}
+
+.active{
+	rect{	fill: #FE8E05; fill-opacity: 1;	}
+	path{	stroke: #FE8E05; stroke-opacity: 1;	}
+}
+
+
+.price-block{
+	@include robotoRegular();
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	.price-tag{
+		display: flex;
+		flex-direction: column;
+	}
+	.price-label{
+		font-size: 18px;
+		line-height: 21px;
+	}
+	.price-total, .price-ruble{
+		text-align: left;
+		font-size: 52px;
+		line-height: 61px;
+		
+	}
+
+	.goToPay{
+		display: block;
+		padding: 24px 52px;
+
+		color: #fff;
+		font-size: 18px;
+		line-height: 21px;
+		text-decoration: none;
+		
+		background-color: #FE8E05;
+		border-radius: 5px;
+
+	}
+}

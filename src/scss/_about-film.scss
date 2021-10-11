@@ -1,6 +1,7 @@
 .main-section{
 	background: linear-gradient(to top, #621402, 75%, transparent),  url(../img/aboutFilm/bg.png) center no-repeat;
-
+	background-size: cover;
+	padding: auto;
 }
 .aboutFilm{
 	display: flex;
