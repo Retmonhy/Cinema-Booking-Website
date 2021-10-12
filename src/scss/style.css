@@ -156,8 +156,8 @@
   }
 }
 .main-section {
-  background: -webkit-gradient(linear, left bottom, left top, from(#621402), color-stop(75%), to(transparent)), url(../img/aboutFilm/bg.png) center no-repeat;
-  background: linear-gradient(to top, #621402, 75%, transparent), url(../img/aboutFilm/bg.png) center no-repeat;
+  background: -webkit-gradient(linear, left bottom, left top, from(#621402), color-stop(75%), to(transparent)), url(../img/aboutFilm/bg.webp) center no-repeat;
+  background: linear-gradient(to top, #621402, 75%, transparent), url(../img/aboutFilm/bg.webp) center no-repeat;
   background-size: cover;
   padding: auto;
 }
@@ -254,7 +254,7 @@
   width: 100px;
   height: 100px;
   border: none;
-  background: transparent url(../img/aboutFilm/play-button.png) center no-repeat;
+  background: transparent url(../img/aboutFilm/play-button.webp) center no-repeat;
 }
 
 .session_position {
