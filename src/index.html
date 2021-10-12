@@ -14,6 +14,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- fancybox -->
+    <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
 
     <title>Cinema Booking Website</title>
 
@@ -24,7 +26,7 @@
   <body>
 
   	<main class="main-section">
-	  	<header class="header main-container">
+	  	<header class="header container">
 	  		<div class="header-content header-container">
 
 		  		<div class="logoPlusLinks">
@@ -32,6 +34,12 @@
 		  				<img class="image_logo" src="img/header//logo.png" alt="Logo">
 		  			</div>
 		  			<nav class="navbar">
+		  				<div class="menu burger-menu">
+		  					<svg width="20" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M0 6H15M0 11H15M15 1H0" stroke="white"/>
+								</svg>
+
+		  				</div>
 		  				<ul>
 		  					<li><a class="header-link" href="#">Главная</a></li>
 		  					<li><a class="header-link" href="#">Фильмы</a></li>
@@ -42,7 +50,7 @@
 		  			</nav>
 		  		</div>
 		  		<div class="user-block">
-		  			<div class="user_nickname">Привет, Дмитрий</div>
+		  			<div class="user_nickname">Привет, Дима</div>
 		  			<div class="user-avatar">
 		  				<img class="image_user-avatar" src="img/header/photo_dima.jpg" alt="Avatar">
 		  			</div>
@@ -51,7 +59,7 @@
 	  		</div>
 	  	</header>
 
-  		<section class="aboutFilm main-container">
+  		<section class="aboutFilm container">
 	  		<div class="aboutFilm-text">
 	  			<small class="small-title">Avengers: Infinity War</small>
 	  			<h1 class="title title_position">Мстители: война бесконечности</h1>
@@ -72,14 +80,14 @@
 	  			</div>
 	  		</div>
 	  		<div class="film-trailer">
-	  			<button class="playTrailer">
+	  			<button data-fancybox data-src='https://www.youtube.com/embed/UsnDPok1ZOU" title="YouTube video player' class="playTrailer">
 	  				
 	  			</button>		
 	  		</div>
 
   		</section>
   		<!-- session -->
-  		<section class="session session_position main-container">
+  		<section class="session session_position container">
   			<div class="date">
   				<h3 class="session-label">Дата</h3>
   				<div class="date-block">
@@ -106,7 +114,7 @@
   				</div>
   			</div>
   			<div class="cinema">
-  				<p class="session-label">Кинотеатр</p>
+  				<h3 class="session-label">Кинотеатр</h3>
   				<div class="select-wrapper">
 	  				<select class="select" name="cinema" >
 	  					<option value="Октябрь, ул. Калужская 28">Октябрь, ул. Калужская 28</option>
@@ -116,7 +124,9 @@
   				</div>
   			</div>
   			<div class="session-time">
-  				<p class="session-label">Время</p>
+  				<div class="all-wrapper">
+  					
+  				<h3 class="session-label">Время</h3>
   				<div class="select-wrapper">
   				<select class="select" name="cinema" >
   					<option value="18:15">18:15</option>
@@ -125,6 +135,7 @@
   					<option value="23:00">23:00</option>
   				</select>
   				</div>
+  				</div>
   			</div>
   		</section>
 
@@ -132,15 +143,15 @@
 
 
   	</main>
-  		<section class="scheme ">
-  			<div class="places main-container">
+  		<section class="scheme">
+  			<div class="places container">
   				
   			
 	
 
-<svg class="scheme-svg" width="1170" height="686" viewBox="0 0 1170 686" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg class="scheme-svg"  viewBox="0 0 1170 686" fill="none" xmlns="http://www.w3.org/2000/svg">
 	<line x1="70" y1="598.5" x2="1088" y2="598.5" stroke="white" stroke-opacity="0.5"/>
-	<path d="M128 117L201.04 50H968.96L1042 117H128Z" fill="url(#paint0_linear)"/>
+	<path  class="rectangle" d="M128 117L201.04 50H968.96L1042 117H128Z" fill="url(#paint0_linear)"/>
 	<line x1="76" y1="45" x2="1094" y2="45" stroke="black" stroke-opacity="0.39" stroke-width="10"/>
 	<svg class="qwerty"><rect x="137.5" y="150" width="26" height="23" rx="5" fill="white" fill-opacity="0.2"/>
 	<path d="M133 162V172.5C133.167 174.667 134.6 179 139 179C143.4 179 155.833 179 161.5 179C163.833 178.833 168.5 177.1 168.5 171.5C168.5 165.9 168.5 162.833 168.5 162" stroke="white" stroke-opacity="0.2" stroke-width="2" stroke-linejoin="round"/>
@@ -485,7 +496,7 @@
 
 
   			</div>
-  			<div class="price-block main-container">
+  			<div class="price-block container">
   				<div class="price-tag">
   					<span class="price-label">Всего к оплате</span>
   					<span class='price-summ'>
@@ -500,6 +511,8 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="js/main.js"></script>    
+    <script src="js/header.js"></script>    
   </body>
 </html>

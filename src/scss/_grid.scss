@@ -1,8 +1,26 @@
 .header-container{
 	padding: 0 0 85px 0;
 }
-.main-container{
+.container{
 	padding: 35px 0;
 	margin: auto;
 	max-width: 1170px;	
+}
+
+@media (max-width: 1200px) {
+	.container {
+		max-width: 960px;
+	}
+}
+
+@media (max-width: 991px) {
+	.container {
+		max-width: 750px;
+	}
+}
+
+@media (max-width: 767px) {
+	.container {
+		max-width: 90%;
+	}
 }

@@ -2,12 +2,14 @@
 	text-align: center;
 	padding-top: 64px;
 	background: #621402;
-	border-radius: 10px;
 	background-size: cover;
 	.places{
 		background: rgba(36, 36, 36, 0.18);
 		border-radius: 10px;
 	}
+	.scheme-svg {
+		max-width: 1170px;
+	} 
 }
 .qwerty:not(.legend):hover{
 	rect{	fill-opacity: 0.5;	}
@@ -27,7 +29,7 @@
 
 .active{
 	rect{	fill: #FE8E05; fill-opacity: 1;	}
-	path{	stroke: #FE8E05; stroke-opacity: 1;	}
+	path{	stroke: #FE8E05; stroke-opacity: 1;	}	
 }
 
 
@@ -64,4 +66,32 @@
 		border-radius: 5px;
 
 	}
+}
+
+@media (max-width: 555px) {
+	.price-block {
+		.price-total, .price-ruble{
+			font-size: 40px;
+		}
+		.goToPay {
+			padding: 24px;
+		}
+	}
+}
+
+@media (max-width: 425px) {
+	.price-block {
+		.goToPay {
+			padding:  20px 14px;
+			transform-origin:  100%  50%;
+			transform: scale(0.8);
+		}
+	}
+}
+
+@media (hover: none) {
+    .qwerty:not(.legend):hover {
+    	rect{	 fill-opacity: 1;	}
+		path{	 stroke-opacity: 1;	}
+    }
 }

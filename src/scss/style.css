@@ -2,12 +2,27 @@
   padding: 0 0 85px 0;
 }
 
-.main-container {
+.container {
   padding: 35px 0;
   margin: auto;
   max-width: 1170px;
 }
 
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (max-width: 991px) {
+  .container {
+    max-width: 750px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 90%;
+  }
+}
 .header-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -51,6 +66,9 @@
   color: #fff;
   text-decoration: none;
 }
+.header .navbar .menu {
+  display: none;
+}
 .header .user-block {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -77,6 +95,66 @@
   border-radius: 50%;
 }
 
+@media (max-width: 991px) {
+  .header .navbar ul {
+    padding-left: 35px;
+  }
+}
+@media (max-width: 767px) {
+  .header .header-link {
+    margin-right: 20px !important;
+  }
+  .header .header-content {
+    padding-bottom: 30px;
+  }
+  .header .navbar ul {
+    background-color: #621402;
+    z-index: 10;
+    padding: 20px;
+    padding-left: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .header .navbar ul li {
+    margin-bottom: 10px;
+  }
+  .header .navbar .menu {
+    width: 40px;
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header .navbar_active ul {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+}
+@media (max-width: 425px) {
+  .header .navbar ul {
+    width: 100vw;
+    padding-left: 50px;
+    margin: 0;
+  }
+}
 .main-section {
   background: -webkit-gradient(linear, left bottom, left top, from(#621402), color-stop(75%), to(transparent)), url(../img/aboutFilm/bg.png) center no-repeat;
   background: linear-gradient(to top, #621402, 75%, transparent), url(../img/aboutFilm/bg.png) center no-repeat;
@@ -262,6 +340,8 @@
           align-items: center;
 }
 .session .select {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   background: rgba(255, 255, 255, 0.15);
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 5px;
@@ -275,16 +355,142 @@
   background-color: gray;
 }
 
+@media (max-width: 991px) {
+  .session {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .session .session-label {
+    display: inline-block;
+  }
+  .session .date {
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .session .cinema {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .session .cinema .session-label {
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+  .session .session-time {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+@media (max-width: 767px) {
+  .aboutFilm .film-trailer {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
+  .aboutFilm .aboutFilm-text {
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+  }
+
+  .session .date .date__day {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .session .date-block {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .session .session-time {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .session .session-time .session-label {
+    margin: 30px 0 0 0;
+  }
+  .session .cinema {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+@media (max-width: 555px) {
+  .aboutFilm {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .aboutFilm .aboutFilm-text {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    width: 100%;
+  }
+  .aboutFilm .aboutFilm-text .durationAndRating_position {
+    margin-bottom: 20px;
+  }
+  .aboutFilm .film-trailer {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -ms-flex-item-align: start;
+        align-self: start;
+    margin: 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+
+  .session .date .date__day {
+    width: 70px;
+    height: 70px;
+  }
+  .session .date .date__day p:nth-child(1) {
+    font-size: 0.8em;
+    text-transform: uppercase;
+  }
+  .session .date .date__day p:nth-child(2) {
+    font-size: 1.3em;
+    font-weight: 900;
+  }
+  .session .date .date__day p:nth-child(3) {
+    font-size: 1em;
+  }
+  .session .session-time {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
 .scheme {
   text-align: center;
   padding-top: 64px;
   background: #621402;
-  border-radius: 10px;
   background-size: cover;
 }
 .scheme .places {
   background: rgba(36, 36, 36, 0.18);
   border-radius: 10px;
+}
+.scheme .scheme-svg {
+  max-width: 1170px;
 }
 
 .qwerty:not(.legend):hover {
@@ -365,6 +571,31 @@
   border-radius: 5px;
 }
 
+@media (max-width: 555px) {
+  .price-block .price-total, .price-block .price-ruble {
+    font-size: 40px;
+  }
+  .price-block .goToPay {
+    padding: 24px;
+  }
+}
+@media (max-width: 425px) {
+  .price-block .goToPay {
+    padding: 20px 14px;
+    -webkit-transform-origin: 100%  50%;
+            transform-origin: 100%  50%;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+@media (hover: none) {
+  .qwerty:not(.legend):hover rect {
+    fill-opacity: 1;
+  }
+  .qwerty:not(.legend):hover path {
+    stroke-opacity: 1;
+  }
+}
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

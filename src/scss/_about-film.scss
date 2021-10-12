@@ -127,6 +127,7 @@
 		align-items: center;
 	}
 		.select{
+			@include robotoRegular();
 			background: rgba(255, 255, 255, 0.15);
 			border: 1px solid rgba(255, 255, 255, 0.5);
 			border-radius: 5px;
@@ -142,4 +143,99 @@
 			
 		}
 
+}
+
+@media (max-width: 991px) {
+
+	.session { 
+		justify-content: space-between;
+		.session-label{ display: inline-block;}
+		flex-wrap: wrap;
+		justify-content: space-between;
+		.date {
+			flex-basis: 70%;
+			order: 1;
+		}
+		.cinema {
+			.session-label {
+				margin-top: 30px;
+				margin-bottom: 0;
+			}
+			flex-basis: 50%;
+			order: 3;
+
+		}
+		.session-time {
+			display: flex;
+			justify-content: end;
+			flex-basis: 30%;
+			order: 2;
+		}
+	}
+
+}
+
+@media (max-width: 767px) {
+	.aboutFilm{
+		.film-trailer{
+			flex-basis: 30%;
+		}
+		.aboutFilm-text{
+			flex-basis: 70%;		
+		}
+	}
+
+	.session {
+	.date .date__day{
+		flex-basis: 100%;			
+	}
+	.date-block{
+		justify-content: space-between;
+	}
+	.session-time {
+		order: 3;
+		.session-label {
+			margin: 30px 0 0 0;
+		}
+	}
+	.cinema {
+		order: 2;
+	}
+}
+}
+
+@media (max-width: 555px) {
+	.aboutFilm {
+		flex-direction: column;
+		.aboutFilm-text {
+			flex-basis: 100%;
+			width: 100%;
+			.durationAndRating_position {
+				margin-bottom: 20px;
+			}
+		}
+		.film-trailer {
+			flex-basis: 100%;
+			align-self: start;
+			margin: 0;
+			justify-content: start;
+		}
+	}
+
+	.session {
+		.date {
+			.date__day {
+				width: 70px;
+				height: 70px;
+
+				p:nth-child(1){ font-size: 0.8em; text-transform: uppercase; }
+				p:nth-child(2){ font-size: 1.3em; font-weight: 900;}
+				p:nth-child(3){ font-size: 1em; }
+			}
+		}
+		.session-time {
+			justify-content: start;
+		}
+
+	}
 }

@@ -20,3 +20,6 @@ function calcPrice(counter) {
 	totalSum = counter * pricePerSeat;
 	return totalSum;
 }
+
+
+
